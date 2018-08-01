@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8" />
     <title>Document</title>
+    <link rel="stylesheet" href="./eric-meyer-reset.min_.css">
+    <link rel="stylesheet" href="./normalize.css">
     <link rel="stylesheet" type="text/css" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
 </head>
 
 <body>
@@ -28,25 +31,25 @@
         <section>
             <ul class="options">
                 <li class="option">
-                    <img src="./images/icon1.svg" alt="">
+                    <div class="option_icon"><img src="./images/icon1.svg" alt=""></div>
                     <h3 class="option_title">Resources</h3>
                     <p class="option_text">Easily manage your inspiration and work-in progress by dragging images into projects and sharable client groups. Easily manage your inspiration and</p>
                     <a href="#" class="option_link">Explore more<img src="./images/arrow.svg" alt=""></a>
                 </li>
                 <li class="option">
-                    <img src="./images/icon2.svg" alt="">
+                    <div class="option_icon"><img src="./images/icon2.svg" alt=""></div>
                     <h3 class="option_title">Training & Finding</h3>
                     <p class="option_text">Easily manage your inspiration and work-in progress by dragging images into projects and sharable client groups.</p>
                     <a href="#" class="option_link">Browse training<img src="./images/arrow.svg" alt=""></a>
                 </li>
                 <li class="option">
-                    <img src="./images/icon3.svg" alt="">
+                    <div class="option_icon"><img src="./images/icon3.svg" alt=""></div>
                     <h3 class="option_title">Connect</h3>
                     <p class="option_text">Easily manage your inspiration and work-in progress by dragging images into projects and sharable client groups. Easily manage your inspiration</p>
                     <a href="#" class="option_link">Connect now<img src="./images/arrow.svg" alt=""></a>
                 </li>
                 <li class="option">
-                    <img src="./images/icon4.svg" alt="">
+                    <div class="option_icon"><img src="./images/icon4.svg" alt=""></div>
                     <h3 class="option_title">Communicate</h3>
                     <p class="option_text">Easily manage your inspiration and work-in progress by dragging images into projects and sharable client groups. Easily</p>
                     <a href="#" class="option_link">Start now<img src="./images/arrow.svg" alt=""></a>
@@ -61,10 +64,19 @@
                 <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
                 <a href="#" class="link">Read More</a>
             </div>
-            <img src="./images/img1.jpg" alt="">
+            <div class="hover"><img class="picture" src="./images/img1.jpg" alt="">
+                <div class="text_hover">
+                    <h2 class="hover_subtitle">It's all about</h2>
+                    <h4 class="hover_title">Fitness First</h4></div>
+            </div>
         </section>
         <section class="section">
-            <img src="./images/img2.jpg" alt="">
+            <div class="hover"><img class="picture" src="./images/img2.jpg" alt="">
+                <div class="text_hover">
+                    <h2 class="hover_subtitle">Love your</h2>
+                    <h4 class="hover_title">Your Body</h4>
+                </div>
+            </div>
             <div class="description">
                 <h2 class="subtitle">Love your</h2>
                 <h4 class="title">Your Body</h4>
@@ -75,26 +87,28 @@
         </section>
     </main>
     <footer>
-        <section>
-            <form action="#" method="post">
-                <input type="text" placeholder="Your Name">
-                <input type="text" placeholder="Your Email">
-                <button>Join Newsletter</button>
-            </form>
-            <ul>
-                <li>
-                    <a href="#"><img src="./images/fb.png" alt=""></a>
-                </li>
-                <li>
-                    <a href="#"><img src="./images/tw.png" alt=""></a>
-                </li>
-                <li>
-                    <a href="#"><img src="./images/yt.png" alt=""></a>
-                </li>
-                <li>
-                    <a href="#"><img src="./images/ln.png" alt=""></a>
-                </li>
-            </ul>
+        <section class="form_section">
+            <div class="form">
+                <form action="#" method="post">
+                    <input type="text" placeholder="Your Name" class="input">
+                    <input type="text" placeholder="Your Email" class="input">
+                    <button class="button">Join Newsletter</button>
+                </form>
+                <ul class="SMM">
+                    <li class="SMM_channel1">
+                        <a href="#"><img src="./images/fb.png" alt="" class="SMM_icon"></a>
+                    </li>
+                    <li class="SMM_channel2">
+                        <a href="#"><img src="./images/tw.png" alt="" class="SMM_icon" ></a>
+                    </li>
+                    <li class="SMM_channel3">
+                        <a href="#"><img src="./images/yt.png" alt="" class="SMM_icon"></a>
+                    </li>
+                    <li class="SMM_channel4">
+                        <a href="#"><img src="./images/ln.png" alt="" class="SMM_icon"></a>
+                    </li>
+                </ul>
+            </div>
         </section>
     </footer>
 </body>
