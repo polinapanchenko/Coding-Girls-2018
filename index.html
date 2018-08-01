@@ -4,13 +4,16 @@
 <head>
     <meta charset="UTF-8" />
     <title>Document</title>
+    <link rel="stylesheet" href="./eric-meyer-reset.min_.css">
+    <link rel="stylesheet" href="./normalize.css">
     <link rel="stylesheet" type="text/css" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
 </head>
 
-<body>
+<body class="body">
     <header class="background_image">
         <div class="header">
-            <img src="./images/logo.png" alt="" height="50">
+            <div class="logo"><img src="./images/logo.png" alt="" height="47"></div>
             <nav>
                 <ul class="menu">
                     <li class="menu_link">About</li>
@@ -28,28 +31,28 @@
         <section>
             <ul class="options">
                 <li class="option">
-                    <img src="./images/icon1.svg" alt="">
+                    <div class="option_icon"><img src="./images/icon1.svg" alt=""></div>
                     <h3 class="option_title">Resources</h3>
                     <p class="option_text">Easily manage your inspiration and work-in progress by dragging images into projects and sharable client groups. Easily manage your inspiration and</p>
-                    <a href="#" class="option_link">Explore more<img src="./images/arrow.svg" alt=""></a>
+                    <a href="#" class="option_link">Explore more</a>
                 </li>
                 <li class="option">
-                    <img src="./images/icon2.svg" alt="">
+                    <div class="option_icon"><img src="./images/icon2.svg" alt=""></div>
                     <h3 class="option_title">Training & Finding</h3>
                     <p class="option_text">Easily manage your inspiration and work-in progress by dragging images into projects and sharable client groups.</p>
-                    <a href="#" class="option_link">Browse training<img src="./images/arrow.svg" alt=""></a>
+                    <a href="#" class="option_link">Browse training</a>
                 </li>
                 <li class="option">
-                    <img src="./images/icon3.svg" alt="">
+                    <div class="option_icon"><img src="./images/icon3.svg" alt=""></div>
                     <h3 class="option_title">Connect</h3>
                     <p class="option_text">Easily manage your inspiration and work-in progress by dragging images into projects and sharable client groups. Easily manage your inspiration</p>
-                    <a href="#" class="option_link">Connect now<img src="./images/arrow.svg" alt=""></a>
+                    <a href="#" class="option_link">Connect now</a>
                 </li>
                 <li class="option">
-                    <img src="./images/icon4.svg" alt="">
+                    <div class="option_icon"><img src="./images/icon4.svg" alt=""></div>
                     <h3 class="option_title">Communicate</h3>
                     <p class="option_text">Easily manage your inspiration and work-in progress by dragging images into projects and sharable client groups. Easily</p>
-                    <a href="#" class="option_link">Start now<img src="./images/arrow.svg" alt=""></a>
+                    <a href="#" class="option_link">Start now</a>
                 </li>
             </ul>
         </section>
@@ -61,10 +64,19 @@
                 <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
                 <a href="#" class="link">Read More</a>
             </div>
-            <img src="./images/img1.jpg" alt="">
+            <div class="hover"><img class="picture" src="./images/img1.jpg" alt="">
+                <div class="text_hover">
+                    <h2 class="hover_subtitle">It's all about</h2>
+                    <h4 class="hover_title">Fitness First</h4></div>
+            </div>
         </section>
         <section class="section">
-            <img src="./images/img2.jpg" alt="">
+            <div class="hover"><img class="picture" src="./images/img2.jpg" alt="">
+                <div class="text_hover">
+                    <h2 class="hover_subtitle">Love your</h2>
+                    <h4 class="hover_title">Your Body</h4>
+                </div>
+            </div>
             <div class="description">
                 <h2 class="subtitle">Love your</h2>
                 <h4 class="title">Your Body</h4>
@@ -74,27 +86,29 @@
             </div>
         </section>
     </main>
-    <footer>
-        <section>
-            <form action="#" method="post">
-                <input type="text" placeholder="Your Name">
-                <input type="text" placeholder="Your Email">
-                <button>Join Newsletter</button>
-            </form>
-            <ul>
-                <li>
-                    <a href="#"><img src="./images/fb.png" alt=""></a>
-                </li>
-                <li>
-                    <a href="#"><img src="./images/tw.png" alt=""></a>
-                </li>
-                <li>
-                    <a href="#"><img src="./images/yt.png" alt=""></a>
-                </li>
-                <li>
-                    <a href="#"><img src="./images/ln.png" alt=""></a>
-                </li>
-            </ul>
+    <footer class="footer">
+        <section class="form_section">
+            <div class="form">
+                <form action="#" method="post">
+                    <input type="text" placeholder="Your Name" class="input">
+                    <input type="text" placeholder="Your Email" class="input">
+                    <button class="button">Join Newsletter</button>
+                </form>
+                <ul class="SMM_list">
+                    <li>
+                        <a href="#" class="SMM SMM_fb"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="SMM SMM_tw"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="SMM SMM_yt"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="SMM SMM_ln"></a>
+                    </li>
+                </ul>
+            </div>
         </section>
     </footer>
 </body>
