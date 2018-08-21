@@ -1,44 +1,25 @@
-    function checkNameValue(event) {
+    function checkinputValue(event) {
         event.preventDefault();
-        var name = document.getElementById("Name");
-        var nameValue = name.value;
-        console.log(nameValue);
+        var input = document.getElementById("input");
+        var inputValue = input.value;
+        console.log(inputValue);
+
+        var form = document.getElementById("form");
+        var notification = ("Thank You for Subscribing!");
 
 
-        if (nameValue === "") {
-            name.style.border = "5px solid red";
+        if (inputValue === "") {
+            input.style.border = "5px solid red";
         } else {
-            name.style.border = "0px solid red";
+            input.style.border = "0px solid red";
+            form.style.display = "none";
+            alert(notification);
+            console.log(notification);
 
         }
 
     }
 
 
-
-    function checkEmailValue(event) {
-        event.preventDefault();
-        var email = document.getElementById("Email");
-        var emailValue = email.value;
-        console.log(emailValue);
-
-        if (emailValue === "") {
-            email.style.border = "5px solid red";
-        } else {
-            email.style.border = "0px solid red";
-
-        }
-    }
-
-
-
-
-
-        var button = document.getElementById("Send");
-        button.addEventListener('click', checkNameValue);
-        button.addEventListener('click', checkEmailValue);
-
-
-
-
-    
+    var button = document.getElementById("Send");
+    button.addEventListener('click', checkinputValue);
